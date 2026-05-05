@@ -59,3 +59,18 @@ description provided per case.
 
 Single-annotator analysis for this project. Reliability would be a natural
 extension if a second pass over the data is performed.
+
+## Subcategories of DK-vs-decision error
+
+Based on the confusion matrix observed on the SpartQA-YN test set,
+DK errors split asymmetrically. Subcategories:
+
+- **6a: DK predicted as Yes** (positive hallucination): the model commits
+  to a positive answer when the story underspecifies the relation. This
+  is the dominant error mode in our analysis.
+- **6b: DK predicted as No**: the model rejects the relation when the
+  correct answer is "cannot determine."
+- **6c: Yes predicted as DK**: the model is overcautious and refuses to
+  commit to a relation that the story does support.
+- **6d: No predicted as DK**: the model fails to commit to a negative
+  conclusion that the story supports.
