@@ -10,7 +10,7 @@ Fine-tuned RoBERTa-base reaches 80.49% test accuracy on SpartQA-YN but trails Ye
 
 ### Confusion matrix on the test set
 
-![Confusion matrix](figures/confusion_matrix.png)
+<img src="figures/confusion_matrix.png" alt="Confusion matrix" width="450">
 
 Of 760 total errors, 590 (77.6%) involve DK on the gold or predicted side. The largest single error type is DK predicted as Yes (n=248, 32.6% of all errors), more than double the rate of conventional Yes/No polarity confusions combined.
 
@@ -25,7 +25,7 @@ Of 760 total errors, 590 (77.6%) involve DK on the gold or predicted side. The l
 
 ### Subpattern distribution in the 50 hand-labeled DK errors
 
-![Subpattern distribution](figures/subpatterns.png)
+<img src="figures/subpatterns.png" alt="Subpattern distribution" width="550">
 
 Topological relations dominate the DK→No errors; horizontal underspecification dominates the DK→Yes errors. Per-cell counts are small (4–14), so the directional pattern is reported as a hypothesis rather than a confirmed finding.
 
@@ -81,12 +81,5 @@ SpartQA-Auto YN split, accessed via the HuggingFace dataset `metaeval/spartqa-yn
 ## License
 
 MIT — see `LICENSE`.
-
-## Citation
-
-```
-Kim, D. (2026). Closed-World Defaulting in Fine-Tuned Transformer Models on
-SpartQA-YN. COSI 115b final project, Brandeis University.
-```
 
 Built on SpartQA: Mirzaee et al. (2021), *SPARTQA: A Textual Question Answering Benchmark for Spatial Reasoning*, NAACL.
